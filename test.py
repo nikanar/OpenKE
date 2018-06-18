@@ -16,7 +16,7 @@ def main():
     con = config.Config()
     con.set_in_path("/u/wujieche/Projects/OpenKE/data/"+kb+"/")
     con.set_test_link_prediction(True)
-    con.set_test_triple_classification(True)
+    con.set_test_triple_classification(False)
     con.set_work_threads(8)
     con.set_dimension(100)
     con.set_import_files("models/{}-{}_model.vec.tf".format(model, kb))
